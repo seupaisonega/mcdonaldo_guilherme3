@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F2E1CE"
-    tools:context=".MainActivity">
+    tools:context=".ofertas">
 
     <ImageView
         android:id="@+id/imgFundoMetade"
@@ -17,8 +17,27 @@
         android:src="@drawable/fundo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="1.0"
+        app:layout_constraintHeight_percent="0.9"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/baseline_account_circle_24"
+        tools:layout_editor_absoluteY="39dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Meus Pontos"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView4" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardQuadrado"
@@ -97,31 +116,73 @@
                 app:srcCompat="@drawable/icone_mapa" />
 
             <Button
-                android:id="@+id/button3"
-                android:layout_width="87dp"
-                android:layout_height="80dp"
+                android:id="@+id/button4"
+                android:layout_width="86dp"
+                android:layout_height="82dp"
                 android:alpha="0"
                 android:text="Button"
                 tools:layout_editor_absoluteX="4dp"
-                tools:layout_editor_absoluteY="30dp" />
+                tools:layout_editor_absoluteY="28dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="388dp"
-        android:layout_height="646dp"
-        app:cardBackgroundColor="#F2E1CE"
-        app:cardCornerRadius="22dp"
-        app:layout_constraintBottom_toTopOf="@+id/cardQuadrado"
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="413dp"
+        android:layout_height="232dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.188"
+        app:srcCompat="@drawable/oferta1" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="413dp"
+        android:layout_height="263dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/oferta2" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/meusped" />
-    </androidx.cardview.widget.CardView>
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="413dp"
+        android:layout_height="263dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.826"
+        app:srcCompat="@drawable/oferta3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ofertas Exclusivas"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="116dp"
+        android:layout_height="96dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

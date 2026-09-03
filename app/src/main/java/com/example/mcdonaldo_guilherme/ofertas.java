@@ -1,6 +1,8 @@
 package com.example.mcdonaldo_guilherme;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,29 +12,24 @@ import androidx.core.view.WindowInsetsCompat;
 import android.content.Intent;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class ofertas extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_ofertas);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        Button btnPedidos = findViewById(R.id.button);
-        btnPedidos.setOnClickListener(view -> {
-            Intent intent = new Intent(MainActivity.this,
-                    pedidos.class);
+        Button btnInicio = findViewById(R.id.button4);
+        btnInicio.setOnClickListener(view -> {
+            Intent intent = new Intent(ofertas.this,
+                    MainActivity.class);
 
             startActivity(intent);
         });
-        Button btnOfertas = findViewById(R.id.button2);
-        btnOfertas.setOnClickListener(view -> {
-            Intent intent = new Intent(MainActivity.this, ofertas.class);
-            startActivity(intent);
-        });
-            }
+    }
 }
